@@ -120,3 +120,4 @@ add_link_options(-specs=nano.specs -specs=nosys.specs -u _printf_float)
 至此，STM32标准库开发环境配置完成，可尝试编译下载。
 
 **后续更新：发现一开始在cmakelists.txt中的注释有人不在意，在此再说一次，注意更改项目名称，project name要更改成clion中的项目名称，直接使用变量似乎有点问题，会导致第二次打开该项目无法正常构建。**
+**CLion中好像有点bug，如果关闭工程重新打开遇到无法编译的情况，请通过 文件->清除缓存->重置CMake缓存，重新打开工程后，去cmakelists.txt重新加载，之后便可以正常使用。**
