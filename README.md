@@ -46,8 +46,6 @@
 
 ### 2、clion配置
 
-* 下载对应插件：OpenOCD + ESP32 Support for Embedded Development
-
 * 设置openOCD及STM32CubeMX对应位置
 
   打开设置，选择编辑、构建、运行，选择嵌入式开发，找到对应的openocd和STM32CubeMX地址，点击测试，可以正常运行代表无误
@@ -70,9 +68,6 @@ source [find target/stm32f1x.cfg]
 # choose dap-link
 adapter driver cmsis-dap
 transport select swd
-
-# 0x10000 = 64K Flash Size
-set FLASH_SIZE 0x20000
 
 source [find target/stm32f1x.cfg]
 
